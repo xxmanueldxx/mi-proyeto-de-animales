@@ -130,6 +130,110 @@
     background-color: #0088cc;
 }
 
+.seccion-contacto {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.seccion-contacto h2 {
+    color: #003366;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila-formulario {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-formulario .grupo-input {
+    flex: 1;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="tel"],
+.formulario input[type="email"],
+.formulario textarea,
+.formulario select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border-color: #0088cc;
+    outline: none;
+}
+
+.cedula-venezolana {
+    display: flex;
+}
+
+.cedula-venezolana select {
+    border-radius: 5px 0 0 5px; 
+    border-right: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.cedula-venezolana input {
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #0088cc;
+}
+
+@media (max-width: 600px) {
+    .fila-formulario {
+        flex-direction: column;
+    }
+}
+
+
 footer {
     background-color: var(--azul-oscuro);
     color: var(--blanco);
