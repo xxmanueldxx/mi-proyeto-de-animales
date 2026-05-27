@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portal.css">
+    <link rel="icon" href="img/logo_animales.jpg.jpeg" type="image/jpeg">
+    <title>Pagina de animales</title> 
+</head>
+<body>
+
+    <header class="hero-portal">
+        <h1>El Fascinante Reino Animal</h1>
+        <p>Explora y descubre las maravillas de los animales que habitan nuestro planeta divididos en sus dos grandes grupos.</p>
+    </header>
+
+    <main class="contenedor-portal">
+        <section class="grid-portal">
+            
+            <a href="vertebrados.html" class="tarjeta-portal">
+                <div class="imagen-portal-wrapper">
+                    <img src="img/peces.jpg.jpeg" alt="Animales Vertebrados">
+                </div>
+                <h3>Animales Vertebrados</h3>
+                <p>Poseen una columna vertebral y esqueleto interno. Explora los peces, anfibios, reptiles, aves y mamíferos.</p>
+                <span class="btn-portal">Explorar Vertebrados &rarr;</span>
+            </a>
+
+            <a href="invertebrados.html" class="tarjeta-portal">
+                <div class="imagen-portal-wrapper">
+                    <img src="img/anfibios.JPG.jpeg" alt="Animales Invertebrados">
+                </div>
+                <h3>Animales Invertebrados</h3>
+                <p>No tienen columna vertebral ni esqueleto articulado. Descubre los insectos, moluscos, arácnidos y más.</p>
+                <span class="btn-portal">Explorar Invertebrados &rarr;</span>
+            </a>
+
+        </section>
+
+    <section class="seccion-contacto">
+            <h2>Déjanos tu comentario</h2>
+            
+            <form class="formulario" action="#" method="POST">
+                
+                <div class="fila-formulario">
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                    </div>
+                </div>
+
+                <div class="fila-formulario">
+                    <div class="grupo-input">
+                        <label for="cedula">Cédula de Identidad:</label>
+                        <div class="cedula-venezolana">
+                            <select id="nacionalidad" name="nacionalidad">
+                                <option value="V">V-</option>
+                                <option value="E">E-</option>
+                            </select>
+                            <input type="text" id="cedula" name="cedula" pattern="[0-9]{7,8}" title="Ingresa 7 u 8 números" placeholder="Ej: 12345678" required>
+                        </div>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="telefono">Teléfono Celular:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="04[0-9]{2}-[0-9]{7}" title="Formato venezolano: 04XX-XXXXXXX" placeholder="Ej: 0414-1234567" required>
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu mensaje o sugerencia aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Enciclopedia Digital de Animales</p>
+        <p>Desarrollado por Manuel Tortolero</p>
+    </footer>
+
+</body>
+
+
+</html>
